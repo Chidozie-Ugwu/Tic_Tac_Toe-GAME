@@ -25,7 +25,7 @@ h1{
     
    
 }
-h3{
+#display{
     border-radius: 5px;
     border: 1px solid rgb(15, 75, 153);
    align-items: center;
@@ -34,6 +34,7 @@ h3{
    margin-left: 500px;
    margin-bottom: 20px;
    width: 250px;
+   color: white;
 }
 
 .button1:hover{
@@ -42,18 +43,30 @@ h3{
 }
 
 .container{
-    height: 500px;
-    width: 500px;
-    display: flex;
+    height: 300px;
+    width: 450px;
+    display: grid;
     margin-left: 400px;
     
 }
 
-.box{
-    display: grid;
-    height: 500px;
-    width: 500px;
-    color: blue;
+.row{
+    display: flex;
+    margin-left: 99px;
     
+    /* height: 500px;
+    width: 500px;
+    color: blue; */
+    
+   }
+   .box{
+    height: 99px;
+    width: 100px;
+    margin: 2px;
+    border: 0px;
+    font-size: 50px;
+    font-weight: bolder;
+    background-color: #eee888;
+
    }
  
