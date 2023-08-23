@@ -43,7 +43,7 @@ function disableButtonsWhenGameIsWon(player) {
     }
     display.textContent = player + "won the game"
 };
-
+// This is used to give the checkDraws a function
 function checkDraws(){
     for (let button of buttons) {
         if (button.textContent === "") {
@@ -52,3 +52,5 @@ function checkDraws(){
     }
     display.textContent = 'The Game Is A !DRAW!'
 }
+
+// 
