@@ -13,7 +13,7 @@ h1{
 
 }
 .button1{
-    
+    align-items: baseline;
     padding: 10px 20px;
     border-radius: 15px;
     background-color: rgb(4, 0, 40);
@@ -22,6 +22,7 @@ h1{
     transition: 300ms transform;
     font-weight: 700;
     margin-left: 590px;
+    
     
    
 }
@@ -66,7 +67,7 @@ h1{
     border: 0px;
     font-size: 50px;
     font-weight: bolder;
-    background-color: #eee888;
+    background-color: darkcyan;
 
    }
  

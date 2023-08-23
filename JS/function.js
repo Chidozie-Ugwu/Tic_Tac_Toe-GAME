@@ -16,10 +16,24 @@ function checkIfGameIsWon(first ,second, third) {
    disableButtonsWhenGameIsWon('Player 2');
 return;}
 else{
-    // checkDraws();
+ checkDraws();
 }
 
 }
+function checkStatus(){
+    //check if the game has been won horizontally 
+    checkIfGameIsWon(0,1,2);
+    checkIfGameIsWon(3,4,5);
+    checkIfGameIsWon(6,7,8);
+    // check if the game has won vertically
+   checkIfGameIsWon(0,3,6);
+   checkIfGameIsWon(1,4,7);
+   checkIfGameIsWon(2,5,8);
+//    for diagonal
+ checkIfGameIsWon(0,4,8);
+ checkIfGameIsWon(2,4,6);
+}
+
 
 function disableButtonsWhenGameIsWon(player) {
     for (let button of buttons) {
@@ -29,3 +43,12 @@ function disableButtonsWhenGameIsWon(player) {
     }
     display.textContent = player + "won the game"
 };
+
+function checkDraws(){
+    for (let button of buttons) {
+        if (button.textContent === "") {
+            return
+        }
+    }
+    display.textContent = 'The Game Is A !DRAW!'
+}
